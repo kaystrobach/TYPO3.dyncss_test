@@ -17,7 +17,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'author' => 'Kay Strobach',
 	'author_email' => 'typo3@kay-strobach.de',
 	'shy' => '',
-	'dependencies' => '',
+	'dependencies' => 'dyncss',
 	'conflicts' => '',
 	'priority' => '',
 	'module' => '',
@@ -32,6 +32,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'version' => '0.0.0',
 	'constraints' => array(
 		'depends' => array(
+			'dyncss' => '0.2.0 - 0.2.99'
 		),
 		'conflicts' => array(
 		),
