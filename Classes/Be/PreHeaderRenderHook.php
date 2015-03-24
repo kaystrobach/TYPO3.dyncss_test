@@ -2,9 +2,9 @@
 
 class Tx_DyncssTest_Be_PreHeaderRenderHook {
 	function main($arg) {
-		/** @var $pagerenderer t3lib_PageRenderer */
+		/** @var $pagerenderer \TYPO3\CMS\Core\Page\PageRenderer */
 		$pagerenderer = $arg['pageRenderer'];
-		$overrides = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('tx_Dyncss_Configuration_BeRegistry');
+		$overrides = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('KayStrobach\Dyncss\Configuration\BeRegistry');
 
 		$options = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['dyncss_test']);
 		$overrides->setOverride('color', $options['baseColor']);
